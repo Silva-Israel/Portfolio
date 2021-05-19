@@ -1,0 +1,57 @@
+main {
+    margin-top: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main ul {
+    list-style-type: none;
+    margin-left: -30px;
+}
+
+main ul li {
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+aside {
+    margin-top: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 90px;
+}
+
+aside h1 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.blue {
+    color: #2779F6;
+    cursor: pointer;
+}
+
+.details {
+    margin-left: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#copyright {
+    color: white;
+}

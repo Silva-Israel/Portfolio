@@ -4,31 +4,110 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Israel Silva | Portfolio</title>
-        <link rel="shortcut icon" href="/shared/images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link
+            rel="shortcut icon"
+            href="/shared/images/favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
     </head>
 
     <body>
-        <header>
+        <header class="fixed-top">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <ul class="navbar-nav">
                     <a href="index.html" class="navbar-brand">My Portfolio</a>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About the Author</a>
+                        <div id="about-me" class="nav-link" onclick="showAbout()">About Me</div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <div id="contact-me" class="nav-link" onclick="showContact()">Contact</div>
                     </li>
                 </ul>
             </nav>
         </header>
+        <main id="main">
+            <h1>Personal Projects</h1>
+            <ul>
+                <li><a href="#">Simple Website - HTML + CSS</a></li>
+                <li><a href="./wdd330/index.html">Exercises - JavaScript</a></li>
+                <li><a href="#">Content Management System - Angular</a></li>
+                <li><a href="#">Movie Database - Angular</a></li>
+            </ul>
+        </main>
 
-        <main></main>
+        <aside>
+            <div id="about" class="hide">
+                <h1>Education</h1>
+                <p>
+                    Brigham Young University - Idaho | Bachelor's in Computer Information Technology | July 2021.
+                    <p class="details">| Received an "<a href="https://www.linkedin.com/feed/update/urn:li:activity:6783160691076411393/" target="_blank">Outstanding Student Award<a>", as chosen by multiple faculty.</p>
+                    <p class="details">| Excelled in Front-end Development classes.</p>
+                    <p class="details">| Gained a passion for Angular and the MEAN stack, learning Full-stack development.</p>
+                    <p class="details">| Was chosen by a professor to participate in a pilot class called "Software Consulting." Only three high-achieving students were selected based on their previous performance in key classes.</p>
+                </p>
+                <h1>Experience</h1>
+                <p class="blue" onclick="showDetails0()">Software Consultant</p>
+                    <div class="hide details details0">
+                        <p>| Brigham Young University - Idaho | Apr 2021 - Current</p>
+                    </div>
+                <p class="blue" onclick="showDetails1()">Assistant Project Manager</p>
+                    <div class="hide details details1">
+                        <p>| Brigham Young University - Idaho | Jan 2021 - Current</p>
+                    </div>
+                <p class="blue" onclick="showDetails2()">IT Project Manager Intern</p>
+                    <div class="hide details details2">
+                        <p>| The Church of Jesus Christ of Latter-Day Saints | Aug 2020 - Dec 2020</p>
+                    </div>
+                <p class="blue" onclick="showDetails3()">Student Software Developer</p>
+                    <div class="hide details details3">
+                        <p>| 3 Details go here.</p>
+                    </div>
+                <p class="blue" onclick="showDetails4()">Academic Advisor</p>
+                    <div class="hide details details4">
+                        <p>| 4 Details go here.</p>
+                    </div>
+                <p class="blue" onclick="showDetails5()">Teacher of English as a Second Language</p>
+                    <div class="hide details details5">
+                        <p>| 5 Details go here.</p>
+                    </div>
+                <p class="blue" onclick="showDetails6()">Volunteer Religious Missionary</p>
+                    <div class="hide details details6">
+                        <p>| 6 Details go here.</p>
+                    </div>
+                <h1>Skills</h1>
+                <p class="blue" onclick="showWeb()">Web Development</p>
+                    <div class="hide details web">
+                        <p>
+                            HTML, CSS, JavaScript <br>
+                            MEAN stack (MongoDB, Express, Angular, NodeJS) <br>
+                            Git, Azure DevOps
+                        </p>
+                    </div>
+                <h1>Hobbies</h1>
+            </div>
+            <div id="contact" class="hide">
+                <h1>Contact Me</h1>
+                <p>
+                    Israel Silva <br>
+                    ei_rael@outlook.com <br>
+                    (208)419-7793 <br>
+                    Rexburg, ID <br>
+                    (Willing to relocate)
+                </p>
+            </div>
+        </aside>
 
-        <aside></aside>
+        <footer class="page-footer bg-dark fixed-bottom">
+            <div class="footer-copyright text-center py-2">
+                <p id="copyright">© 2021 Copyright: Israel Silva</p>
+            </div>
+        </footer>
 
-        <footer></footer>
-
-        <script src="scripts.js" type="module"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
