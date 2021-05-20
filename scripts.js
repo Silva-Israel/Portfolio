@@ -85,3 +85,13 @@ function showWeb() {
         web.style.display = "block";
     }
 }
+
+function send() {
+    const msg = document.querySelector("#message-box").value;
+
+    console.log(msg);
+
+    if(msg) {
+        Email.send
+    }
+}

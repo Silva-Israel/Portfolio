@@ -52,6 +52,16 @@ aside h1 {
     display: none;
 }
 
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#contact {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 #copyright {
     color: white;
 }
