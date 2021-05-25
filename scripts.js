@@ -1,6 +1,7 @@
 const about = document.querySelector("#about");
 const contact = document.querySelector("#contact");
 const main = document.querySelector("#main");
+const education = document.querySelector('#education');
 const details0 = document.querySelector(".details0");
 const details1 = document.querySelector(".details1");
 const details2 = document.querySelector(".details2");
@@ -10,16 +11,12 @@ const details5 = document.querySelector(".details5");
 const details6 = document.querySelector(".details6");
 const web = document.querySelector(".web");
 
-function showAbout() {
-    contact.style.display = "none";
-    about.style.display = "block";
-    main.style.display = "none";
-}
-
-function showContact() {
-    about.style.display = "none";
-    contact.style.display = "block";
-    main.style.display = "none";
+function showEducation() {
+    if(education.style.display && education.style.display !== "none") {
+        education.style.display = "none";
+    } else {
+        education.style.display = "block";
+    }
 }
 
 function showDetails0() {
@@ -86,12 +83,8 @@ function showWeb() {
     }
 }
 
-function send() {
-    const msg = document.querySelector("#message-box").value;
+function hideJumbotron() {
+    const btn = document.querySelector("#hide");
 
-    console.log(msg);
-
-    if(msg) {
-        Email.send
-    }
+    btn.style.display = 'none';
 }
