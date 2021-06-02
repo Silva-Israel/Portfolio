@@ -1,119 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Israel Silva | Portfolio</title>
-        <link
-            rel="shortcut icon"
-            href="/shared/images/favicon.ico"
-            type="image/x-icon"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="bootstrap.min.css" />
-        <link
-            rel="stylesheet"
-            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-        />
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-    </head>
 
-    <body>
-        <header class="fixed-top">
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <ul class="navbar-nav">
-                    <a href="index.html" class="navbar-brand">My Portfolio</a>
-                    <li class="nav-item">
-                        <a href="about.html" id="about-me" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" id="contact-me" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Israel Silva | Portfolio</title>
+    <link rel="shortcut icon" href="/shared/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
 
-        <aside>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <a href="index.html" class="navbar-brand">My Portfolio</a>
+                <li class="nav-item">
+                    <a href="about.html" id="about-me" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" id="contact-me" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
         <div id="about">
-                <h1>&#127891; Education</h1>
-                <p class="blue" onclick="showEducation()">Brigham Young University - Idaho | Bachelor's in Computer Information Technology | July 2021.</p>
-                    <div id="education" class="left-line hide">
-                        <p class="details">Received an "<a href="https://www.linkedin.com/feed/update/urn:li:activity:6783160691076411393/" target="_blank">Outstanding Student Award<a>", as chosen by multiple faculty.</p>
-                        <p class="details">Excelled in Front-end Development classes.</p>
-                        <p class="details">Gained a passion for Angular and the MEAN stack, learning Full-stack development.</p>
-                        <p class="details">Was chosen by a professor to participate in a pilot class called "Software Consulting." Only three high-achieving students were selected based on their previous performance in key classes.</p>
-                    </div>
-                <h1>&#128161; Experience</h1>
-                <p class="blue" onclick="showDetails0()">Software Consultant | Brigham Young University - Idaho | Apr 2021 - Current</p>
-                    <div class="hide details0">
-                        <div class="left-line">
-                            <p class="details">Helped a Non-Profit Organization to better track their users by implementing a CRM.</p>
-                            <p class="details">Wrote Controllers in C# (.NET) to perform CRUD operations on a Dynamics 365 server.</p>
-                            <p class="details">Helped implement the Front-end on Wordpress using Gravity Forms.</p>
-                            <p class="details"><a href="#letter-thayne">Letter of Recommendation (Coming soon)</a></p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails1()">Assistant Project Manager | Brigham Young University - Idaho | Jan 2021 - Current</p>
-                    <div class="hide details1">
-                        <div class="left-line">
-                            <p class="details">Improved the management of projects in the Online Curriculum Development department.</p>
-                            <p class="details">Created course content on the Canvas LMS.</p>
-                            <p class="details">Trained and led other students as a Student Lead.</p>
-                            <p class="details"><a href="#letter-finch">Letter of Recommendation (Coming soon)</a></p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails2()">IT Project Manager Intern | The Church of Jesus Christ of Latter-Day Saints | Aug 2020 - Dec 2020</p>
-                    <div class="hide details2">
-                        <div class="left-line">
-                            <p class="details">Managed projects of worldwide scope and ensured completion within business requirements.</p>
-                            <p class="details">Coordinated communication with vendors and carried out good relationships.</p>
-                            <p class="details">Worked closely with Network Engineers and participated in SCRUM meetings.</p>
-                            <p class="details">Helped train end users on how to install and use networking equipment.</p>
-                            <p class="details"><a href="#letter-royce">Letter of Recommendation (Coming soon)</a></p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails3()">Student Software Developer</p>
-                    <div class="hide details3">
-                        <div class="left-line">
-                            <p class="details">3 Details go here.</p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails4()">Academic Advisor</p>
-                    <div class="hide details4">
-                        <div class="left-line">
-                            <p class="details">4 Details go here.</p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails5()">Teacher of English as a Second Language</p>
-                    <div class="hide details5">
-                        <div class="left-line">
-                            <p class="details">5 Details go here.</p>
-                        </div>
-                    </div>
-                <p class="blue" onclick="showDetails6()">Volunteer Religious Missionary</p>
-                    <div class="hide details6">
-                        <div class="left-line">
-                            <p class="details">6 Details go here.</p>
-                        </div>
-                    </div>
-                <h1>&#128295; Skills</h1>
-                <p class="blue" onclick="showWeb()">Web Development</p>
-                    <div class="hide details web">
-                        <p>
-                            HTML, CSS, JavaScript <br>
-                            MEAN stack (MongoDB, Express, Angular, NodeJS) <br>
-                            Git, Azure DevOps
-                        </p>
-                    </div>
-                <h1>&#127928; Hobbies</h1>
+            <h1>&#127891; Education</h1>
+            <p class="blue" onclick="showEducation()">Brigham Young University - Idaho | Bachelor's in Computer
+                Information Technology | July 2021.</p>
+            <div id="education" class="left-line hide">
+                <p class="details">Received an "<a
+                        href="https://www.linkedin.com/feed/update/urn:li:activity:6783160691076411393/"
+                        target="_blank">Outstanding Student Award<a>", as chosen by multiple faculty.</p>
+                <p class="details">Excelled in Front-end Development classes.</p>
+                <p class="details">Gained a passion for Angular and the MEAN stack, learning Full-stack development.</p>
+                <p class="details">Was chosen by a professor to participate in a pilot class called "Software
+                    Consulting." Only three high-achieving students were selected based on their previous performance in
+                    key classes.</p>
             </div>
-        </aside>
-        <footer class="page-footer bg-dark fixed-bottom">
-            <div class="footer-copyright text-center py-2">
-                <p id="copyright">© 2021 Copyright - Israel Silva</p>
+            <h1>&#128161; Experience</h1>
+            <p class="blue" onclick="showDetails0()">Software Consultant | Brigham Young University-Idaho | Apr 2021 -
+                Current</p>
+            <div class="hide details0">
+                <div class="left-line">
+                    <p class="details">Helped a Non-Profit Organization to better track their users by implementing a
+                        CRM.</p>
+                    <p class="details">Wrote Controllers in C# (.NET) to perform CRUD operations on a Dynamics 365
+                        server.</p>
+                    <p class="details">Helped implement the Front-end on Wordpress using Gravity Forms.</p>
+                    <p class="details"><a href="#letter-thayne">Letter of Recommendation (Coming soon)</a></p>
+                </div>
             </div>
-        </footer>
+            <p class="blue" onclick="showDetails1()">Assistant Project Manager | Brigham Young University-Idaho | Jan
+                2021 - Current</p>
+            <div class="hide details1">
+                <div class="left-line">
+                    <p class="details">Improved the management of projects in the Online Curriculum Development
+                        department.</p>
+                    <p class="details">Created course content on the Canvas LMS.</p>
+                    <p class="details">Trained and led other students as a Student Lead.</p>
+                    <p class="details"><a href="#letter-finch">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDetails2()">IT Project Manager Intern | The Church of Jesus Christ of
+                Latter-Day Saints | Aug 2020 - Dec 2020</p>
+            <div class="hide details2">
+                <div class="left-line">
+                    <p class="details">Managed projects of worldwide scope and ensured completion within business
+                        requirements.</p>
+                    <p class="details">Coordinated communication with vendors and carried out good relationships.</p>
+                    <p class="details">Worked closely with Network Engineers and participated in SCRUM meetings.</p>
+                    <p class="details">Helped train end users on how to install and use networking equipment.</p>
+                    <p class="details"><a href="#letter-royce">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDetails3()">Student Software Developer | Brigham Young University-Idaho | May 2018 - Aug 2020</p>
+            <div class="hide details3">
+                <div class="left-line">
+                    <p class="details">Planned, designed, wrote, and tested C# (.NET) and Angular applications.</p>
+                    <p class="details">Kept documentation of projects as a Technical Writer.</p>
+                    <p class="details"><a href="#letter-conway">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDetails4()">Academic Advisor | BYU-Pathway Worldwide | Apr 2016 - May 2018</p>
+            <div class="hide details4">
+                <div class="left-line">
+                    <p class="details">Helped students from all over the world to reach their educational goals.</p>
+                    <p class="details">As a student lead, supervised student employees and trained them on professional development.</p>
+                    <p class="details"><a href="#letter-shelton">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDetails5()">Teacher of English as a Second Language | Talken English School | Mar 2007 - Feb 2016</p>
+            <div class="hide details5">
+                <div class="left-line">
+                    <p class="details">Taught English as a second language to students of all ages and in all levels.</p>
+                    <p class="details">Helped students prepare for proficiency exams (TOEFL, TOEIC, IELTS).</p>
+                    <p class="details"><a href="#letter-todeschini">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDetails6()">Volunteer Religious Missionary | United Kingdom | Aug 2004 - Aug 2006</p>
+            <div class="hide details6">
+                <div class="left-line">
+                    <p class="details">Leader and trainer of groups of 6, 20 and 180+ missionaries in the England Birmingham Mission for The LDS Church.</p>
+                    <p class="details">Personal assistant to the Mission President.</p>
+                    <p class="details"><a href="#letter-munday">Letter of Recommendation (Coming soon)</a></p>
+                </div>
+            </div>
+            <h1>&#128295; Skills</h1>
+            <p class="blue" onclick="showWeb()">Web Development</p>
+            <div class="hide web">
+                <div class="left-line">
+                    <p class="details">
+                        HTML, CSS, JavaScript <br>
+                        Angular, React <br>
+                        Visual Studio Code
+                    </p>
+                </div>
+            </div>
+            <p class="blue" onclick="showSoft()">Software Development</p>
+            <div class="hide soft">
+                <div class="left-line">
+                    <p class="details">
+                        Java, C# (.NET) <br>
+                        Android Studio, IntelliJ, Visual Studio <br>
+                    </p>
+                </div>
+            </div>
+            <p class="blue" onclick="showDb()">Databases</p>
+            <div class="hide db">
+                <div class="left-line">
+                    <p class="details">
+                        MongoDB, SQL <br>
+                        MongoDB Compass, Oracle <br>
+                    </p>
+                </div>
+            </div>
+            <p class="blue" onclick="showOs()">Operating Systems</p>
+            <div class="hide os">
+                <div class="left-line">
+                    <p class="details">
+                        Windows Server, Linux <br>
+                        VMware, VirtualBox <br>
+                    </p>
+                </div>
+            </div>
+            <p class="blue" onclick="showCrm()">CRM (Customer Relationship Management)</p>
+            <div class="hide crm">
+                <div class="left-line">
+                    <p class="details">
+                        Microsoft Dynamics 365 <br>
+                        Microsoft Dataverse <br>
+                    </p>
+                </div>
+            </div>
+            <p class="blue" onclick="showLeader()">Leadership + Volunteer Work</p>
+            <div class="hide leader">
+                <div class="left-line">
+                    <p class="details">
+                        <p class="details">Leader and trainer of groups of 6, 20 and 180 missionaries in the England Birmingham Mission for The LDS Church.</p>
+                        <p class="details">Student Supervisor training and overseeing the work of 15 other student employees.</p>
+                        <p class="details">President of an organization of 60+ men that seeks their improvement and that of their families, in local church, as a volunteer.</p>
+                        <p class="details">Member of the Policy Council in local pre-school, as a volunteer.</p>
+                    </p>
+                </div>
+            </div>
+            <h1 class="pointer" onclick="showHobbies()">&#127928; Hobbies</h1>
+            <div class="hide hobbies">
+                <div class="left-line">
+                    <p class="details">I play the guitar, as well as the drums and the bass. I have had many bands with various friends. (I play the guitar on <a href="https://www.youtube.com/watch?v=4uDDn-ih1nk" target="_blank">this song</a>)</p>
+                    <p class="details">I love reading comics. My favorites are X-Men and Batman.</p>
+                    <p class="details">I am an amateur photopgrapher and videographer. (This is a <a href="https://www.youtube.com/watch?v=eyGnB45onek" target="_blank">wedding video</a> I made for some friends)</p>
+                    <p class="details">I used to skateboard as a teenager, and still do it sometimes.</p>
+                    <p class="details">I am the only person I personally know who throws boomerangs.</p>
+                    <p class="details">In my free time, I like to play PC games. My favorites are the Tomb Raider series.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer class="page-footer bg-dark fixed-bottom">
+        <div class="footer-copyright text-center py-2">
+            <p id="copyright">© 2021 Copyright - Israel Silva</p>
+        </div>
+    </footer>
 
-        <script src="scripts.js"></script>
-    </body>
+    <script src="scripts.js"></script>
+</body>
+
 </html>

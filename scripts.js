@@ -10,6 +10,12 @@ const details4 = document.querySelector(".details4");
 const details5 = document.querySelector(".details5");
 const details6 = document.querySelector(".details6");
 const web = document.querySelector(".web");
+const soft = document.querySelector(".soft");
+const db = document.querySelector(".db");
+const os = document.querySelector(".os");
+const crm = document.querySelector(".crm");
+const leader = document.querySelector(".leader");
+const hobbies = document.querySelector(".hobbies");
 
 function showEducation() {
     if(education.style.display && education.style.display !== "none") {
@@ -80,6 +86,54 @@ function showWeb() {
         web.style.display = "none";
     } else {
         web.style.display = "block";
+    }
+}
+
+function showSoft() {
+    if(soft.style.display && soft.style.display !== "none") {
+        soft.style.display = "none";
+    } else {
+        soft.style.display = "block";
+    }
+}
+
+function showDb() {
+    if(db.style.display && db.style.display !== "none") {
+        db.style.display = "none";
+    } else {
+        db.style.display = "block";
+    }
+}
+
+function showOs() {
+    if(os.style.display && os.style.display !== "none") {
+        os.style.display = "none";
+    } else {
+        os.style.display = "block";
+    }
+}
+
+function showCrm() {
+    if(crm.style.display && crm.style.display !== "none") {
+        crm.style.display = "none";
+    } else {
+        crm.style.display = "block";
+    }
+}
+
+function showLeader() {
+    if(leader.style.display && leader.style.display !== "none") {
+        leader.style.display = "none";
+    } else {
+        leader.style.display = "block";
+    }
+}
+
+function showHobbies() {
+    if(hobbies.style.display && hobbies.style.display !== "none") {
+        hobbies.style.display = "none";
+    } else {
+        hobbies.style.display = "block";
     }
 }
 

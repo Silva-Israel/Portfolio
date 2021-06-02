@@ -63,6 +63,10 @@ aside h1 {
     cursor: pointer;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .details {
     margin-left: 15px;
 }
