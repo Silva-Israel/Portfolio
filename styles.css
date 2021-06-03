@@ -93,3 +93,27 @@ img {
 .left-line {
     border-left: 3px solid darkgray;
 }
+
+.tooltipp {
+    position: relative;
+}
+
+.tooltipp:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 15px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    background: rgb(255, 255, 167);
+    text-align: center;
+    display: none;
+}
+
+.tooltipp:hover:before {
+    display: block;
+}
