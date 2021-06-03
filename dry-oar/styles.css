@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times new roman", Times, serif;
+}
+
+.logo {
+    background-color: white;
+    position: relative;
+    width: 110px;
+    border: solid 1px;
+    margin-left: 25px;
+}
+
+nav {
+    background-color: #AA5A39;
+    max-width: 100%;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 25px
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    line-height: 3em;
+    justify-content: space-around;
+    margin-top: -100px;
+    margin-bottom: 0;
+    padding-left: 160px;
+    height: 58px;
+}
+
+nav li {
+    padding: 0 em;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    padding: 1em .6em;
+}
+
+nav a:hover {
+    background-color: #496C89;
+}
+
+.img {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+}
+
+.rightcol {
+    width: 48%;
+    padding: 1em;
+    flex: 1 0 15em;
+    margin: .5em;
+}
+
+.leftcol {
+    width: 48%;
+    padding: 1em;
+    flex: 1 0 15em;
+    margin: .5em;
+}
+
+.top-row {
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.middle-row {
+    background-color: #82BB5D;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.bottom-row {
+    text-align: center;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer img {
+    max-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #123552;
+    font-family: Sansita, Arial, sans-serif;
+    margin-bottom: -0.3em;
+}
+
+.text {
+    color: white;
+}
+
+#content {
+    max-width: 940px;
+    width: 90%;
+    margin: auto;
+}
+
+.foot {
+    max-width: 940px;
+    height: 55px;
+    background-color: #AA5A39;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#copyright {
+    font-family: Sansita, Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#social {
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#pics {
+    padding: 10px;
+}
+
+#rivers {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#one {
+    padding: 20px;
+    background-color: #82BB5D;
+    margin: 10px;
+    color: white;
+}
+
+#two {
+    padding: 20px;
+    margin: 10px;
+}
+
+#three {
+    padding: 20px;
+    background-color: #728DA5;
+    margin: 10px;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#faq {
+    padding: 10px;
+    margin: 10px;
+}
